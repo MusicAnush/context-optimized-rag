@@ -8,32 +8,28 @@ A high-performance, lightweight Retrieval-Augmented Generation (RAG) platform wr
 
 ## 🏗️ Core Architecture Flow
 [ Unstructured Text Data ]
-                │
-                ▼
-     [ Custom Pre-Processing ] 
-      (Structural Chunking)
-                │
-                ▼
-    [ Multi-Stream Retrieval ]
-        ┌───────┴───────┐
-        ▼               ▼
- [ Dense Search ]   [ Sparse Search ]
-  (FAISS HNSW)        (BM25Okapi)
-        └───────┬───────┘
-                ▼
-     [ Reciprocal Rank Fusion ]
-                │
-                ▼
-   [ Context Window Compression ]
-     (Information Density Tuning)
-                │
-                ▼
-    [ LLM Synthesis & Eval Loop ]
-       (Groundedness Check)
-
-
-
-       ---
+                    │
+                    ▼
+         [ Custom Pre-Processing ] 
+          (Structural Chunking)
+                    │
+                    ▼
+        [ Multi-Stream Retrieval ]
+            ┌───────┴───────┐
+            ▼               ▼
+     [ Dense Search ]   [ Sparse Search ]
+      (FAISS HNSW)        (BM25Okapi)
+            └───────┬───────┘
+                    ▼
+         [ Reciprocal Rank Fusion ]
+                    │
+                    ▼
+       [ Context Window Compression ]
+         (Information Density Tuning)
+                    │
+                    ▼
+        [ LLM Synthesis & Eval Loop ]
+           (Groundedness Check)
 
 ## ⚡ Key Engineering Implementations
 
