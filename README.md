@@ -7,6 +7,7 @@ A high-performance, lightweight Retrieval-Augmented Generation (RAG) platform wr
 ---
 
 ## 🏗️ Core Architecture Flow
+```bash
 [ Unstructured Text Data ]
                     │
                     ▼
@@ -30,6 +31,7 @@ A high-performance, lightweight Retrieval-Augmented Generation (RAG) platform wr
                     ▼
         [ LLM Synthesis & Eval Loop ]
            (Groundedness Check)
+```
 
 ## ⚡ Key Engineering Implementations
 
