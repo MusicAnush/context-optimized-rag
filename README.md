@@ -77,6 +77,11 @@ OPENAI_API_KEY=your_actual_secret_openai_api_key_here
 ```bash
 streamlit run app.py
 ```
+
+##How to Run Unit tests
+```bash
+python -m unittest test_rag_engine.py
+```
 💻 Technical Stack Matrix
 Language & Logic Engine: Python
 
